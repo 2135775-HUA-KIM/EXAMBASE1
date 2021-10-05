@@ -1,0 +1,63 @@
+html,body
+{
+    margin: 0px;
+}
+
+.menu
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3 fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "menu o o"
+        "link1 a a"
+        "link2 b b"
+        "link3 c c"
+        "link4 . .";
+
+    padding: 10px;
+    margin: 0px 100px;
+}
+
+h1
+{
+    grid-area: menu;
+}
+
+#un
+{
+    grid-area: link1;
+}
+#deux
+{
+    grid-area: link2;
+}
+#trois
+{
+    grid-area: link3;
+}
+#quatre
+{
+    grid-area: link4;
+}
+
+
+h2
+{
+    grid-area: o;
+}
+
+#a
+{
+    grid-area: a;
+}
+
+#b
+{
+    grid-area: b;
+}
+#c
+{
+    grid-area: c;
+}
